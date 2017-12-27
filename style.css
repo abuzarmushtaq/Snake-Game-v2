@@ -1,0 +1,109 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #263238;
+    font-family: 'Segoe UI';
+}
+
+
+
+.container {
+    text-align: center;
+}
+
+canvas {
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 9em;
+    color: #eceff1;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    z-index: 0;
+    margin-left: 15%;
+    transition: opacity .2s;
+}
+span {
+    font-size: .2em;
+    margin-left: 10px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s;
+    color: #ef9a9a;
+}
+
+.frames {
+    animation-name: go-left;
+    animation-duration: .7s;
+}
+
+@keyframes go-left {
+    from {
+        margin-left: 15%;
+    }
+
+    to {
+        margin-left: 50%;
+    }
+}
+
+
+button {
+    color: #b0bec5;
+    padding: 10px;
+    background: #546e7a;
+    border: 2px solid #b0bec5;
+    font-weight: 200;
+    font-size: 3em;
+    transition: opacity 1.4s;
+    z-index: 0;
+    opacity: 0;
+}
+
+button:hover {
+    background: #b0bec5;
+    color: #37474f;
+    transition: 0.7s;
+
+}
+
+#strt {
+    padding: 20px 50px 20px 50px;
+}
+
+/*Buttons hide and show classes */
+
+.hide {
+    visibility: none;
+    
+}
+
+.trans {
+
+
+    opacity: 5;
+    z-index: 2;
+
+}
+
+
+
+
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.2em;
+        margin-left: 10%;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
